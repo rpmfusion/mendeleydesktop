@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2018 Luya Tshimbalanga <luya_tfz@thefinalzone.net> -->
+<component type="desktop-application">
+​  <id>com.elsevier.MendeleyDesktop</id>
+  <metadata_license>FSFAP</metadata_license>
+  <project_license>LGPLv2+ and Mendeley and MIT and CC-BY-SA and (CPAL or AGPLv3) and BSD</project_license>
+  <name>Mendeley Desktop</name>
+  <summary>Academic reference management software for researchers</summary>
+
+  <description>
+    <p>
+      Mendeley is a combination of a desktop application and a website which
+      helps you manage, share and discover both content and contacts in research.
+    </p>
+    <p>Our software, Mendeley Desktop, offers you:</p>
+    <ul>
+       <li>
+         Automatic extraction of document details (authors, title, journal etc.)
+         from academic papers into a library database, which saves you a lot of
+         manual typing! As more people use Mendeley, the quality of the data
+         extraction improves.
+       </li>
+       <li>
+         Super-efficient management of your papers: "Live" full-text search across
+         all your papers – the results start to appear as you type! Mendeley
+         Desktop also lets you filter your library by authors, journals or keywords.
+         You can also use document collections, notes and tags to organize your
+         knowledge, and export the document details in different citation styles.
+       </li>
+       <li>
+         Sharing and synchronization of your library (or parts of it) with
+         selected colleagues. This is perfect for jointly managing all the papers in
+         your lab!
+       </li>
+       <li>
+         More great features: A plug-in for citing your articles in Microsoft
+         Word, OCR (image-to-text conversion, so you can full-text search all your
+         scanned PDFs) and lots more new features being worked upon.
+       </li>
+​    </ul>
+​  </description>
+
+  <launchable type="desktop-id">mendeleydesktop.desktop</launchable>
+
+  <screenshots>
+    <screenshot type="default">
+      <caption>Mendeley Desktop in default Library as Table view</caption>
+      <image>https://raw.github.com/hmaarrfk/mendeley-rpm/master/images/mendeley-desktop_2.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Login session</caption>
+      <image>https://raw.github.com/hmaarrfk/mendeley-rpm/master/images/mendeley-desktop_0.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Welcome dialog</caption>
+      <image>https://raw.github.com/hmaarrfk/mendeley-rpm/master/images/mendeley-desktop_1.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Mendeley Desktop in Library as Citation view</caption>
+      <image>https://raw.github.com/hmaarrfk/mendeley-rpm/master/images/mendeley-desktop_3.png</image>
+    </screenshot>
+  </screenshots>
+
+  <url type="homepage">https://www.mendeley.com</url>
+  <project_group>Mendeley</project_group>
+
+  <provides>
+    <binary>mendeleydesktop</binary>
+  </provides>
+
+  <releases>
+    <release version="1.19.3" date="2019-01-01">
+      <description>
+	<p>We have fixed the following bugs:</p>
+	<ul>
+​	  <li>In the library:
+             <ul>
+              <li>The ‘Read’ column has been restored in the Recently Read view</li>
+              <li>The application is no longer unresponsive during automatic backups</li>
+              <li>Annotations can now be moved after they have been created</li>
+              <li>Annotations are no longer displaying as ‘Unknown user’ for all exported annotations</li>
+             </ul>
+          </li>
+          <li>In the LibreOffice citation plugin:
+	     <ul>
+              <li>Adjacent inline or footnote citations no longer fail to merge when cited in a table</li>
+              <li>Sync to fail when the user profile was not synced</li>
+             </ul>
+	  </li>
+	</ul>
+​      </description>
+​    </release>
+​  </releases>
+</component>

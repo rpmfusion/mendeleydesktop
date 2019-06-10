@@ -1,0 +1,11 @@
+--- mendeleydesktop-1.19.3-linux-x86_64/share/applications/mendeleydesktop.desktop.orig	2017-11-06 07:39:42.000000000 -0800
++++ mendeleydesktop-1.19.3-linux-x86_64/share/applications/mendeleydesktop.desktop	2019-02-18 20:32:38.544902021 -0800
+@@ -2,7 +2,7 @@
+ Name=Mendeley Desktop
+ GenericName=Research Paper Manager
+ Comment=Mendeley Desktop is software for managing and sharing research papers
+-Exec=mendeleydesktop %f
++Exec=mendeleydesktop --unix-distro-build %f
+ Icon=mendeleydesktop
+ Terminal=false
+ Type=Application
