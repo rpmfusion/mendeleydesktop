@@ -4,7 +4,7 @@
 
 Name:		mendeleydesktop
 Version:	1.19.4
-Release:	2%{?dist}
+Release:	3%{?dist}
 Summary:	Academic reference management software for researchers
 
 License:	LGPLv2+ and Mendeley and MIT and CC-BY-SA and (CPAL or AGPLv3) and BSD
@@ -166,6 +166,9 @@ appstream-util validate-relax --nonet %{buildroot}/%{_metainfodir}/%{name}-libre
 %{_metainfodir}/%{name}-libreoffice.metainfo.xml
 
 %changelog
+* Sat Aug 10 2019 RPM Fusion Release Engineering <leigh123linux@gmail.com> - 1.19.4-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
+
 * Thu Jun 06 2019 Luya Tshimbalanga <luya_tfz@thefinalzone.net> - 1.19.4-2
 - Set ExclusiveArch to x86_64 due to failure of build system
 
