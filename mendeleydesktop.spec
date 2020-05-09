@@ -59,7 +59,7 @@ Requires:	qt5-qtbase-gui
 BuildRequires:	pkgconfig(python3)
 
 # Set exclusivity for x86 based architecture
-# ExclusiveArch:	x86_64
+ExclusiveArch:	x86_64
 
 %description
 Mendeley is a combination of a desktop application and a website which
