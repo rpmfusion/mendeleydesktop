@@ -3,8 +3,8 @@
 %global		loextdir %{_libdir}/libreoffice/share/extensions/Mendeley
 
 Name:		mendeleydesktop
-Version:	1.19.4
-Release:	4%{?dist}
+Version:	1.19.6
+Release:	1%{?dist}
 Summary:	Academic reference management software for researchers
 
 License:	LGPLv2+ and Mendeley and MIT and CC-BY-SA and (CPAL or AGPLv3) and BSD
@@ -56,10 +56,10 @@ Requires:	qt5-qtbase-gui
 
 
 # Needed to resolve shebang issue
-BuildRequires:	python3-devel
+BuildRequires:	pkgconfig(python3)
 
 # Set exclusivity for x86 based architecture
-ExclusiveArch:	x86_64
+# ExclusiveArch:	x86_64
 
 %description
 Mendeley is a combination of a desktop application and a website which
@@ -166,6 +166,9 @@ appstream-util validate-relax --nonet %{buildroot}/%{_metainfodir}/%{name}-libre
 %{_metainfodir}/%{name}-libreoffice.metainfo.xml
 
 %changelog
+* Sat May 09 2020 Luya Tshimbalanga <luya_tfz@thefinalzone.net> - 1.19.6-1
+- Update to 1.19.6
+
 * Wed Feb 05 2020 RPM Fusion Release Engineering <leigh123linux@gmail.com> - 1.19.4-4
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild
 
