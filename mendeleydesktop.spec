@@ -4,7 +4,7 @@
 
 Name:		mendeleydesktop
 Version:	1.19.6
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	Academic reference management software for researchers
 
 License:	LGPLv2+ and Mendeley and MIT and CC-BY-SA and (CPAL or AGPLv3) and BSD
@@ -166,6 +166,9 @@ appstream-util validate-relax --nonet %{buildroot}/%{_metainfodir}/%{name}-libre
 %{_metainfodir}/%{name}-libreoffice.metainfo.xml
 
 %changelog
+* Wed Aug 19 2020 RPM Fusion Release Engineering <leigh123linux@gmail.com> - 1.19.6-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild
+
 * Sat May 09 2020 Luya Tshimbalanga <luya_tfz@thefinalzone.net> - 1.19.6-1
 - Update to 1.19.6
 
