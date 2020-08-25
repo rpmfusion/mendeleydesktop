@@ -170,6 +170,9 @@ appstream-util validate-relax --nonet %{buildroot}/%{_metainfodir}/%{name}-libre
 * Mon Aug 24 2020 Luya Tshimbalanga <luya_tfz@thefinalzone.net> - 1:1.19.4-1
 - Revert to 1.19.4 using epoch
 
+* Wed Aug 19 2020 RPM Fusion Release Engineering <leigh123linux@gmail.com> - 1.19.6-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild
+
 * Sat May 09 2020 Luya Tshimbalanga <luya_tfz@thefinalzone.net> - 1.19.6-1
 - Update to 1.19.6
 
