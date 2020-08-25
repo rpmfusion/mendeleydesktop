@@ -3,8 +3,9 @@
 %global		loextdir %{_libdir}/libreoffice/share/extensions/Mendeley
 
 Name:		mendeleydesktop
-Version:	1.19.6
+Version:	1.19.4
 Release:	1%{?dist}
+Epoch:		1
 Summary:	Academic reference management software for researchers
 
 License:	LGPLv2+ and Mendeley and MIT and CC-BY-SA and (CPAL or AGPLv3) and BSD
@@ -166,6 +167,9 @@ appstream-util validate-relax --nonet %{buildroot}/%{_metainfodir}/%{name}-libre
 %{_metainfodir}/%{name}-libreoffice.metainfo.xml
 
 %changelog
+* Mon Aug 24 2020 Luya Tshimbalanga <luya_tfz@thefinalzone.net> - 1:1.19.4-1
+- Revert to 1.19.4 using epoch
+
 * Sat May 09 2020 Luya Tshimbalanga <luya_tfz@thefinalzone.net> - 1.19.6-1
 - Update to 1.19.6
 
