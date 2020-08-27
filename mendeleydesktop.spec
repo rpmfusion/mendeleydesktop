@@ -4,7 +4,7 @@
 
 Name:		mendeleydesktop
 Version:	1.19.4
-Release:	1%{?dist}
+Release:	2%{?dist}
 Epoch:		1
 Summary:	Academic reference management software for researchers
 
@@ -86,7 +86,7 @@ Our software, Mendeley Desktop, offers you:
 %package -n libreoffice-Mendeley
 Summary: Insert citations and generate bibliography from Mendeley
 License: ECL 1.0
-Requires: %{name}%{?_isa} = %{version}-%{release}
+Requires: %{name}%{?_isa} = %{?epoch}:%{version}-%{release}
 Requires: libreoffice-core%{_isa}
 
 %description -n libreoffice-Mendeley
@@ -167,6 +167,9 @@ appstream-util validate-relax --nonet %{buildroot}/%{_metainfodir}/%{name}-libre
 %{_metainfodir}/%{name}-libreoffice.metainfo.xml
 
 %changelog
+* Thu Aug 27 2020 Leigh Scott <leigh123linux@gmail.com> - 1:1.19.4-2
+- Add missing epoch to the requires
+
 * Mon Aug 24 2020 Luya Tshimbalanga <luya_tfz@thefinalzone.net> - 1:1.19.4-1
 - Revert to 1.19.4 using epoch
 
