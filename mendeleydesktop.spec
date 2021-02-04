@@ -4,7 +4,7 @@
 
 Name:		mendeleydesktop
 Version:	1.19.4
-Release:	2%{?dist}
+Release:	3%{?dist}
 Epoch:		1
 Summary:	Academic reference management software for researchers
 
@@ -167,6 +167,9 @@ appstream-util validate-relax --nonet %{buildroot}/%{_metainfodir}/%{name}-libre
 %{_metainfodir}/%{name}-libreoffice.metainfo.xml
 
 %changelog
+* Thu Feb 04 2021 RPM Fusion Release Engineering <leigh123linux@gmail.com> - 1:1.19.4-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild
+
 * Thu Aug 27 2020 Leigh Scott <leigh123linux@gmail.com> - 1:1.19.4-2
 - Add missing epoch to the requires
 
