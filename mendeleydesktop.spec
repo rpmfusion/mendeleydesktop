@@ -4,7 +4,7 @@
 
 Name:		mendeleydesktop
 Version:	1.19.4
-Release:	5%{?dist}
+Release:	6%{?dist}
 Epoch:		1
 Summary:	Academic reference management software for researchers
 
@@ -167,6 +167,10 @@ appstream-util validate-relax --nonet %{buildroot}/%{_metainfodir}/%{name}-libre
 %{_metainfodir}/%{name}-libreoffice.metainfo.xml
 
 %changelog
+* Mon Aug 08 2022 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 1:1.19.4-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_37_Mass_Rebuild and ffmpeg
+  5.1
+
 * Thu Feb 10 2022 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 1:1.19.4-5
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_36_Mass_Rebuild
 
