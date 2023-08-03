@@ -139,7 +139,7 @@ unzip -qq openOfficePlugin/Mendeley-%{version}.oxt -d %{buildroot}%{loextdir}
 chmod 644 %{buildroot}%{loextdir}/{description.xml,Mendeley/*.xba}
 chmod 755 %{buildroot}%{loextdir}/Scripts/MendeleyDesktopAPI.py
 # Fix Python shebangs 
-pathfix.py -pni "%{__python3} %{py3_shbang_opts}" %{buildroot}%{loextdir}/Scripts/MendeleyDesktopAPI.py
+%py3_shebang_fix %{buildroot}%{loextdir}/Scripts/MendeleyDesktopAPI.py
 rm -r openOfficePlugin
 popd
 
